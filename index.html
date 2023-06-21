@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="cart">
+      <div class="forBorder">
+        <!-- <h1 class="search">Name of film</h1> -->
+        <div class="flexgon">
+          <label class="center" for="find">Title</label>
+          <input
+            value="titanic"
+            class="style"
+            type="text"
+            id="find"
+            name="title"
+          />
+        </div>
+        <div class="flexgon">
+          <label class="center" for="type">Type</label>
+          <select class="style styleTip" name="cars" id="type">
+            <option value="Movie">Movie</option>
+            <option value="Series">Series</option>
+            <option value="Episode">Episode</option>
+          </select>
+        </div>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
+        <button class="find">search</button>
+      </div>
+    </div>
 
-<body>
-	sadasd
+    <div class="cardFilm"></div>
+    <div class="visible notFund">
+      <div class="insideForAlert">
+        <h5 class="cantFind">That Film does not exsist</h5>
+        <button class="close" href="#">x</button>
+      </div>
+    </div>
+    <div class="shadowForBG"></div>
 
-
-</body>
-
+    <script src="./scrip.js"></script>
+  </body>
 </html>
